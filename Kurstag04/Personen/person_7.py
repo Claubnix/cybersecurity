@@ -1,6 +1,6 @@
 import datetime
 
-import custom_lib
+import Kurstag04.Personen.custom_lib as custom_lib
 
 
 p7 = custom_lib.Person("Timon", datetime.datetime(2019, 1, 29))
