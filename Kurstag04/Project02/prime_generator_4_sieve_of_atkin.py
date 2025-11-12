@@ -1,7 +1,7 @@
 import math
 
 
-def sieve_of_atkin(limit=10000000000):
+def sieve_of_atkin(limit=100000):
     """
     Returns a list of prime numbers below the number "limit"
     """

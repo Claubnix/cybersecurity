@@ -1,4 +1,4 @@
-def sieve_of_eratosthenes(limit=1000000000):
+def sieve_of_eratosthenes(limit=100000000):
     """
     Returns a list of prime numbers below the number "limit"
     """

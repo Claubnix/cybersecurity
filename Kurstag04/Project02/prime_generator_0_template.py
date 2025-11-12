@@ -3,9 +3,13 @@ def algorithm(limit=1000):
     Returns a list of prime numbers below the number "limit"
     """
     primes = []
-    for pruefzahl in range(<insert start), <insert stop>):
+    for pruefzahl in range(2, limit+1):
         prime = True
-        <do something>
+        # Check if pruefzahl is prime
+        for i in range(2, int(pruefzahl ** 0.5) + 1):
+            if pruefzahl % i == 0:
+                prime = False
+                break
         if prime:
             primes.append(pruefzahl)
     return primes

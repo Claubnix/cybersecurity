@@ -1,5 +1,11 @@
 def fibonacci_sequence(limit=1000):
-    <do something>
+    fibonacci = []
+    a = 0
+    b = 1
+    for i in range(limit):
+        fibonacci.append(b)
+        a, b = b, a + b
+    return fibonacci
 
 
 def main():
