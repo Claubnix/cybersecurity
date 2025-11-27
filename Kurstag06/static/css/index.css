@@ -1,0 +1,78 @@
+/*#########################################################################################*/
+/*#                                                                                       #*/
+/*#                                      Web Scraper                                      #*/
+/*#                                                                                       #*/
+/*#########################################################################################*/
+
+/**
+ * @package		WebScraper
+ * @subpackage	Layout
+ * @author		Christian Locher <locher@faithpro.ch>
+ * @copyright	2025 Faithful programming
+ * @license		http://www.gnu.org/licenses/gpl-3.0.en.html GNU/GPLv3
+ * @version		alpha - 2025-02-21
+ * @since		File available since release alpha
+**/
+
+body {
+	margin: 0;
+	background-color: #000;
+}
+
+#searchbar {
+	margin: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	width: calc(100% - 64px);
+	color: #fff;
+	background-color: #000;
+}
+
+#searchbar:hover {
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+#article-holder {
+	display: grid;
+  	grid-template-columns: 1fr;
+  	gap: 20px;
+  	margin: 0 20px;
+  	width: calc(100% - 40px);
+}
+
+article {
+	overflow: hidden;
+	height: 100%;
+	border-radius: 25px;
+	background-color: #111;
+}
+
+article:hover {
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+article a {
+	text-decoration: none;
+}
+
+article img {
+	width: 100%;
+}
+
+article h3,
+article p {
+	margin: 25px;
+	color: #fff;
+}
+
+@media (min-width: 800px) {
+	#article-holder {
+	  	grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1200px) {
+	#article-holder {
+	  	grid-template-columns: 1fr 1fr 1fr;
+	}
+}
